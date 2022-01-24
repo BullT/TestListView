@@ -15,12 +15,17 @@ namespace TestListView
                 new User {Name = "Jenny"}
             };
 
+
+        }
+
+        public ObservableCollection<User> Users { get; set; }
+
+        private void UsersListView_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
             foreach (User userSelected in Users)
             {
                 UsersListView.SelectedItems.Add(userSelected);
             }
         }
-
-        public ObservableCollection<User> Users { get; set; }
     }
 }

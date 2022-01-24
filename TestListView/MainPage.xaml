@@ -10,7 +10,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <ListView x:Name="UsersListView" ItemsSource="{x:Bind Users}" SelectionMode="Multiple" IsMultiSelectCheckBoxEnabled="False">
+        <ListView x:Name="UsersListView" ItemsSource="{x:Bind Users}" SelectionMode="Multiple" IsMultiSelectCheckBoxEnabled="False" Loaded="UsersListView_Loaded">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
